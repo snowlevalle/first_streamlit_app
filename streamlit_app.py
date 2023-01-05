@@ -34,7 +34,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_c
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit') 
 streamlit.write('Thanks for adding ', add_my_fruit)
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+#my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
 # write your own comment -what does the next line do? 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
